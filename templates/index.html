@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chatbot FAQ Escolar — PC.8</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="layout">
+
+    <aside class="sidebar">
+        <h1>Chatbot FAQ Escolar</h1>
+        <p class="subtitle">PC.8 — Bag of Words + TF-IDF + Cosseno + Votação por maioria</p>
+
+        <h2>Contexto do chatbot</h2>
+        <p>Este chatbot responde apenas perguntas das categorias abaixo:</p>
+        <ul class="categories">
+            {% for c in categories %}
+            <li>
+                <strong>{{ c.name }}</strong>
+                <span>{{ c.description }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <button id="toggle-debug" class="link-btn">Mostrar detalhes técnicos (similaridade / votação)</button>
+    </aside>
+
+    <main class="chat-area">
+        <div id="chat-window" class="chat-window">
+            <div class="message bot">
+                <div class="bubble">
+                    Olá! Eu sou o assistente virtual da escola. Pergunte algo sobre horários,
+                    matrícula, biblioteca, secretaria ou notas/faltas.
+                </div>
+            </div>
+        </div>
+
+        <form id="chat-form" class="chat-form">
+            <input id="chat-input" type="text" autocomplete="off"
+                   placeholder="Digite sua pergunta... (ex: Qual o horário da biblioteca?)" />
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

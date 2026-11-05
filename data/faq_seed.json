@@ -1,0 +1,213 @@
+{
+  "categories": [
+    {
+      "slug": "horarios",
+      "name": "Horários e Calendário Acadêmico",
+      "description": "Horário de aulas, horário de disciplinas, calendário letivo, feriados e férias."
+    },
+    {
+      "slug": "matricula",
+      "name": "Matrícula e Documentos",
+      "description": "Matrícula, rematrícula, trancamento, declarações e documentos acadêmicos."
+    },
+    {
+      "slug": "biblioteca",
+      "name": "Biblioteca",
+      "description": "Funcionamento, empréstimo, devolução e renovação de livros na biblioteca."
+    },
+    {
+      "slug": "secretaria",
+      "name": "Secretaria e Atendimento",
+      "description": "Contato, localização e horário de atendimento da secretaria acadêmica."
+    },
+    {
+      "slug": "notas",
+      "name": "Notas, Faltas e Avaliações",
+      "description": "Consulta de notas, consulta de faltas e regras de recuperação/avaliação."
+    }
+  ],
+  "intents": [
+    {
+      "slug": "horario_aulas",
+      "category": "horarios",
+      "answer": "As aulas do período regular acontecem de segunda a sexta-feira, podendo ser no turno da manhã (07h30 às 12h10), tarde (13h30 às 18h10) ou noite (19h00 às 22h40), conforme o turno em que você está matriculado.",
+      "questions": [
+        "Qual o horário das aulas?",
+        "Que horas começam as aulas?",
+        "Que horas terminam as aulas?",
+        "Qual o horário de início e término das aulas?",
+        "A que horas as aulas começam na escola?",
+        "Quais os turnos de aula disponíveis?"
+      ]
+    },
+    {
+      "slug": "horario_disciplinas",
+      "category": "horarios",
+      "answer": "O horário individual das disciplinas em que você está matriculado pode ser consultado no Portal do Aluno, na opção 'Grade Horária', usando seu login e senha institucionais.",
+      "questions": [
+        "Onde encontro o horário das disciplinas?",
+        "Como vejo a grade horária das minhas disciplinas?",
+        "Onde consulto minha grade de horários?",
+        "Onde posso ver o horário de cada matéria?",
+        "Como saber em qual sala e horário é minha disciplina?"
+      ]
+    },
+    {
+      "slug": "calendario_academico",
+      "category": "horarios",
+      "answer": "O calendário acadêmico, com datas de início e fim do semestre, feriados, provas e férias, está disponível no site institucional, na seção 'Calendário Acadêmico'.",
+      "questions": [
+        "Qual o calendário acadêmico deste semestre?",
+        "Quando começam as férias?",
+        "Quando terminam as aulas neste semestre?",
+        "Quais são os feriados do calendário escolar?",
+        "Onde encontro o calendário letivo?",
+        "Quando começa o próximo semestre?"
+      ]
+    },
+    {
+      "slug": "como_matricular",
+      "category": "matricula",
+      "answer": "A matrícula é feita de forma on-line pelo Portal do Aluno, na opção 'Matrícula', dentro do período divulgado no calendário acadêmico. Em caso de dúvida, procure a secretaria acadêmica.",
+      "questions": [
+        "Como faço minha matrícula?",
+        "Como me matriculo nas disciplinas?",
+        "Onde faço a matrícula do próximo semestre?",
+        "Qual o procedimento para realizar matrícula?",
+        "Como funciona o processo de rematrícula?"
+      ]
+    },
+    {
+      "slug": "declaracao_matricula",
+      "category": "matricula",
+      "answer": "A declaração de matrícula pode ser emitida diretamente no Portal do Aluno, na opção 'Documentos' > 'Declaração de Matrícula', em formato PDF, sem necessidade de ir à secretaria.",
+      "questions": [
+        "Como peço declaração de matrícula?",
+        "Onde consigo uma declaração de que estou matriculado?",
+        "Como emito atestado de matrícula?",
+        "Preciso de um comprovante de matrícula, como consigo?",
+        "Onde baixo minha declaração de matrícula?"
+      ]
+    },
+    {
+      "slug": "trancamento",
+      "category": "matricula",
+      "answer": "O trancamento de matrícula deve ser solicitado via requerimento no Portal do Aluno ou presencialmente na secretaria, dentro do prazo estabelecido no calendário acadêmico.",
+      "questions": [
+        "Como tranco minha matrícula?",
+        "Quero trancar o curso, o que devo fazer?",
+        "Qual o prazo para trancamento de matrícula?",
+        "Como solicito trancamento de disciplina?",
+        "É possível trancar apenas uma disciplina?"
+      ]
+    },
+    {
+      "slug": "horario_biblioteca",
+      "category": "biblioteca",
+      "answer": "A biblioteca funciona de segunda a sexta-feira, das 08h00 às 21h00, e aos sábados das 08h00 às 12h00.",
+      "questions": [
+        "Qual o horário de funcionamento da biblioteca?",
+        "A biblioteca abre aos sábados?",
+        "Até que horas a biblioteca fica aberta?",
+        "Que horas a biblioteca abre?",
+        "Qual o horário de atendimento da biblioteca?"
+      ]
+    },
+    {
+      "slug": "emprestimo_livro",
+      "category": "biblioteca",
+      "answer": "Para emprestar um livro, leve sua carteirinha de estudante até o balcão da biblioteca ou utilize o totem de autoatendimento. O prazo padrão de empréstimo é de 14 dias.",
+      "questions": [
+        "Como faço empréstimo de livro?",
+        "Como pego um livro emprestado na biblioteca?",
+        "Qual o prazo de empréstimo de livros?",
+        "Preciso de carteirinha para emprestar livro?",
+        "Como funciona o empréstimo de material na biblioteca?"
+      ]
+    },
+    {
+      "slug": "renovacao_emprestimo",
+      "category": "biblioteca",
+      "answer": "A renovação do empréstimo pode ser feita pelo Portal do Aluno, na opção 'Biblioteca' > 'Meus Empréstimos', desde que não haja reserva do livro por outro usuário.",
+      "questions": [
+        "Como renovo um empréstimo?",
+        "Posso renovar o prazo de devolução do livro?",
+        "Como estender o prazo de um livro emprestado?",
+        "Onde renovo o empréstimo de um livro pela internet?",
+        "É possível renovar empréstimo online?"
+      ]
+    },
+    {
+      "slug": "contato_secretaria",
+      "category": "secretaria",
+      "answer": "Você pode entrar em contato com a secretaria acadêmica pelo telefone (12) 3000-0000 ou pelo e-mail secretaria@escola.edu.br.",
+      "questions": [
+        "Qual o telefone da secretaria?",
+        "Qual o e-mail de contato da secretaria?",
+        "Como entro em contato com a secretaria?",
+        "Qual o número para falar com a secretaria acadêmica?",
+        "Como ligo para a secretaria da escola?"
+      ]
+    },
+    {
+      "slug": "localizacao_secretaria",
+      "category": "secretaria",
+      "answer": "A secretaria acadêmica fica no bloco A, térreo, ao lado da entrada principal do campus.",
+      "questions": [
+        "Onde fica a secretaria?",
+        "Em qual prédio é a secretaria acadêmica?",
+        "Como chego até a secretaria?",
+        "Qual a localização da secretaria dentro da escola?",
+        "Em que bloco fica a secretaria?"
+      ]
+    },
+    {
+      "slug": "horario_atendimento_secretaria",
+      "category": "secretaria",
+      "answer": "O atendimento presencial da secretaria acontece de segunda a sexta-feira, das 08h00 às 20h00, sem fechar ao meio-dia.",
+      "questions": [
+        "Qual o horário de atendimento da secretaria?",
+        "Que horas a secretaria abre?",
+        "A secretaria fecha para o almoço?",
+        "Até que horas a secretaria atende?",
+        "A secretaria atende aos sábados?"
+      ]
+    },
+    {
+      "slug": "consultar_notas",
+      "category": "notas",
+      "answer": "Suas notas ficam disponíveis no Portal do Aluno, na opção 'Boletim', atualizadas após o lançamento pelo professor de cada disciplina.",
+      "questions": [
+        "Como vejo minhas notas?",
+        "Onde consulto o boletim escolar?",
+        "Como saber minha nota na prova?",
+        "Onde encontro minhas notas das disciplinas?",
+        "Como acesso meu boletim online?"
+      ]
+    },
+    {
+      "slug": "consultar_faltas",
+      "category": "notas",
+      "answer": "A quantidade de faltas por disciplina pode ser consultada no Portal do Aluno, na opção 'Frequência', atualizada conforme o professor lança a chamada.",
+      "questions": [
+        "Como vejo minhas faltas?",
+        "Onde consulto minha frequência?",
+        "Quantas faltas eu tenho em uma disciplina?",
+        "Como sei se estou reprovado por falta?",
+        "Onde vejo o número de faltas por matéria?"
+      ]
+    },
+    {
+      "slug": "recuperacao",
+      "category": "notas",
+      "answer": "A recuperação é oferecida ao aluno com média final entre 3,0 e 5,9 na disciplina, consistindo em uma avaliação adicional cuja nota substitui a menor nota do semestre, respeitado o calendário de provas finais.",
+      "questions": [
+        "Como funciona a recuperação?",
+        "Quem tem direito a fazer recuperação?",
+        "Qual a nota mínima para fazer prova de recuperação?",
+        "Como é calculada a nota da recuperação?",
+        "Quando acontece a prova de recuperação?"
+      ]
+    }
+  ]
+}
